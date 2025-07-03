@@ -32,6 +32,10 @@ const Login = () => {
           id="email"
           name="email"
           type="email"
+          onChange={(e) => {
+            setEmail(e.target.value);
+            // console.log(e.target.value)
+          }}
           value={email}
           className="w-full px-3 py-2 rounded bg-[#2C2C2C] text-[#E0E0E0] placeholder-[#808080] outline-none"
           placeholder="you@example.com"
@@ -46,6 +50,10 @@ const Login = () => {
           id="password"
           name="password"
           type="password"
+          onChange={(e) => {
+            setPassword(e.target.value);
+            // console.log(e.target.value)
+          }}
           value={password}
           className="w-full px-3 py-2 rounded bg-[#2C2C2C] text-[#E0E0E0] placeholder-[#808080] outline-none"
           placeholder="••••••••"
